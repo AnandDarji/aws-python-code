@@ -136,7 +136,7 @@ def FetchData():
             response = dynamodb_client.get_item(
                 TableName='employee_image_table',
                 Key={
-                    'empid': {
+                    'emp_id': {
                         'N': str(emp_id)
                     }
                 }
